@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Contacto para Asesoría Legal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #F9FBF9;
+        }
+		
+		h2 {
+            color: #4CAF50;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        .form-section {
+            background-color: #f2f2f2;
+            padding: 1.5rem;
+            border-radius: 8px;
+        }
+        label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .image-section img {
+            max-width: 90%;
+			text-align: center;
+			height: auto;
+            border-radius: 8px;
+            margin-top: 1rem;
+        }
+		.text{
+            width: 90%;
+			text-align: justify;
+        }
+		
+		
+		
+		.carousel {
+            display: flex;
+            overflow: hidden;
+            margin-top: 1rem;
+            position: relative;
+        }
+        .carousel img {
+            flex: 0 0 auto;
+            width: 100%;
+            transition: transform 0.5s ease;
+        }
+		
+		
+		
+    </style>
+	
+	
+	
+	    <script>
+        let currentIndex = 0;
+        function showSlide(index) {
+            const slides = document.querySelectorAll('.carousel img');
+            if (index >= slides.length) currentIndex = 0;
+            else if (index < 0) currentIndex = slides.length - 1;
+            else currentIndex = index;
+            slides.forEach((slide, i) => {
+                slide.style.transform = `translateX(-${currentIndex * 100}%)`;
+            });
+        }
+        function nextSlide() {
+            showSlide(currentIndex + 1);
+        }
+        function prevSlide() {
+            showSlide(currentIndex - 1);
+        }
+        function autoSlide() {
+            setInterval(() => {
+                nextSlide();
+            }, 3000);
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            autoSlide();
+        });
+    </script>
+	
+		
+	
+</head>
+<body>
+    <header>
+        <h1>Solicitud de Contacto para Asesoría Legal</h1>
+    </header>
+    <main>
+        <section class="section">
+            <h2>Introducción al Servicio</h2>
+            <p class="text">Si has llegado hasta aquí es porque tienes dudas sobre qué es asesoría legal y es probable que, además, tengas un negocio o estés pensando en emprender. En cualquier caso, contar con esta asesoría jurídica puede salvarte de muchas y en este post te contaré las principales ventajas del asesoramiento lega
+				La asesoría legal se puede tomar antes de una decisión importante y, a menudo, obtendrás orientación sobre cómo proceder con un problema.
+				Sin duda, el asesoramiento legal te puede ayudar a tomar mejores decisiones y evitar cometer errores que podrían generar inconvenientes más adelante.
+				Un buen abogado le explicará claramente el mejor camino a seguir en función de tus circunstancias, lo que te permitirá comprender cuáles deben ser tus próximas acciones. Esto te ayuda a evitar resultados que atenten injustamente tus derechos.
+				Por tanto, antes de actuar legalmente es importante escuchar las recomendaciones de un abogado. Es un profesional que siempre se esforzará por resolver el caso en tu beneficio.
+			</p>
+            <div class="image-section">
+                <img src="imagen/personalizada.jpg" alt="Asesoría legal personalizada">
+            </div>
+        </section>
+        <section class="section">
+            <h2>Áreas Legales Cubiertas</h2>
+            <ul>
+                <li>Derecho Civil</li>
+                <li>Derecho Penal</li>
+                <li>Derecho Laboral</li>
+                <li>Derecho Familiar</li>
+                <li>Asesoría Corporativa</li>
+            </ul>
+            <div class="image-section">
+                <img src="imagen/g22.jpg" alt="Áreas legales cubiertas">
+            </div>
+        </section>
+        <section class="section">
+            <h2>Beneficios de la Asesoría</h2>
+            <ul>
+                <li>Ayuda a saber qué tipo de empresa formar El servicio de una empresa de asesoría legal corporativa es necesario desde antes de la formación de la empresa. Y es que gracias a los conocimientos y experiencia de los asesores, es posible determinar cuál es el tipo de empresa que se necesita formar. Para lo cual se tiene en cuenta lo que sea más conveniente para los empresarios, el giro de su negocio, así como el futuro de la organización.</li>
+                <li>Ayuda a resolver conflictos entre los socios de la empresa Otra ventaja de la asesoría legal corporativa es que, en el caso de que exista alguna disputa entre los socios de la organización, los expertos en derecho pueden ayudar a regular y resolver los problemas</li>
+                <li>Contribuye a la demarcación de aspectos importantes para el crecimiento de la empresa
+					Y es que gracias a la asesoría legal, es posible demarcar la planificación de aspectos legales, pero también fiscales y laborales. Con el acompañamiento de este grupo de profesionales, las empresas pueden forjar la manera de mejorar su competitividad, a través de la creación de sociedades mercantiles, franquicias, licencias para el uso de marcas, etc.</li>
+                <li>Se evitan conflictos legales Uno de los grandes beneficios de la asesoría legal es que al contar con expertos en derecho corporativo, estos pueden hacer una evaluación completa de la estructura legal de la empresa, a través de la cual es posible identificar cualquier amenaza que pueda ocasionar conflictos legales. Al detectar y solucionar dichas amenazas se evita que la empresa termine siendo penalizada por entidades reguladoras, ya sea a través del cierre temporal o permanente del negocio, o mediante la aplicación de multas.</li>
+				<li>Facilita la adaptación de la empresa a los cambios constantes de la regulación Los asesores legales están en constante capacitación y se mantienen informados sobre las nuevas legislaciones, normas, decretos, etc. que pueden afectar los negocios de sus clientes. Esto los hace aptos para implementar dichos cambios a las empresas de estos para así mantener el orden en los contratos que tenga con sus clientes y proveedores; y, del mismo modo, se evitan contingencias con entidades reguladoras.</li>        
+				<li>Ayuda a que proteja su propiedad intelectual Las empresas producen activos intangibles que la valorizan y que deben ser protegidos. Los asesores legales pueden reconocer dichos activos, para registrarlos y protegerlos; de esa manera no pueden ser usados por nadie que no cuente con la autorización de la empresa y pague a esta los derechos correspondientes.</li>        
+				<li>Favorece las negociaciones Finalmente, que puede encargarse de realizar negociaciones, internas y externas, que sean más rentables para la empresa. La experiencia y los conocimientos de los expertos en derecho permite, asimismo, evitar contingencias y negociar mejores términos en los contratos que se firmen. Como puede ver, contar con asesoría legal corporativa ofrece amplios beneficios a su negocio. Estos no solo le servirán para tener contratos y negociaciones más favorables, sino también encaminar su empresa para que alcance el crecimiento que espera. Si necesita contratar a una  ¡contáctenos! Contamos con la experiencia y el equipo humano que necesita.</li>        
+			</ul>
+            <div class="image-section">
+                <img src="imagen/g11.jpg" alt="Beneficios de la asesoría">
+            </div>
+        </section>
+		
+		
+		<section class="section">
+            <h2>Últimos Casos de Éxito</h2>
+            <p>Hemos ayudado a nuestros clientes a ganar casos de disputas laborales, acuerdos de divorcio amistosos, resolución de contratos y más. Nuestro historial de éxito respalda nuestra experiencia y dedicación.</p>
+            <div class="carousel">
+                <img src="imagen/ac2.jpg" alt="Caso de éxito 1">
+                <img src="imagen/ac4.jpg" alt="Caso de éxito 2">
+                <img src="imagen/g233.jpg" alt="Caso de éxito 3">
+            </div>
+        </section>
+		
+		
+		
+		
+       
+        <section class="form-section">
+            <h2>Formulario de Contacto</h2>
+            <form action="/submit" method="POST">
+                <label for="name">Nombre Completo</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensaje o Consulta</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar Solicitud</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
+
